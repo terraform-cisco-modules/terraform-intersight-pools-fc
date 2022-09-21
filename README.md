@@ -17,7 +17,7 @@ module "wwpn_pool" {
   description      = "Demo WWPN Pool"
   id_blocks = [
     {
-      from = "00:00:00:25:B5:00:00:00"
+      from = "20:00:00:25:B5:00:00:00"
       size = 1000
     }
   ]
