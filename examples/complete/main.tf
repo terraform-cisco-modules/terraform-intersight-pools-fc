@@ -1,5 +1,5 @@
 module "wwpn_pool" {
-  source  = "scotttyso/pools-fc/intersight"
+  source  = "terraform-cisco-modules/pools-fc/intersight"
   version = ">= 1.0.1"
 
   assignment_order = "sequential"
