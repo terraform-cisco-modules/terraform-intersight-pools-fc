@@ -14,7 +14,7 @@ data "intersight_organization_organization" "org_moid" {
 # GUI Location: Pools > Create Pool
 #____________________________________________________________
 
-resource "intersight_fcpool_pool" "fc_pool" {
+resource "intersight_fcpool_pool" "fc" {
   assignment_order = var.assignment_order
   description      = var.description != "" ? var.description : "${var.name} ${var.pool_purpose} Pool."
   name             = var.name
@@ -24,8 +24,8 @@ resource "intersight_fcpool_pool" "fc_pool" {
     content {
       object_type = "fcpool.Block"
       from        = id_blocks.value.from
-      size        = id_blocks.value.size != null ? id_blocks.value.size : null
-      to          = id_blocks.value.to != null ? id_blocks.value.to : null
+      size        = id_blocks.value.size
+      to          = id_blocks.value.to
     }
   }
   organization {
