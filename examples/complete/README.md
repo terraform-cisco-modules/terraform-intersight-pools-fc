@@ -15,7 +15,7 @@ Note that this example will create resources. Resources can be destroyed with `t
 ```hcl
 module "wwpn_pool" {
   source  = "terraform-cisco-modules/pools-fc/intersight"
-  version = ">= 1.0.1"
+  version = ">= 1.0.2"
 
   assignment_order = "sequential"
   description      = "Demo WWPN Pool"
