@@ -57,9 +57,9 @@ func TestFull(t *testing.T) {
 		{
 			"ClassId":    "fcpool.Block",
 			"ObjectType": "fcpool.Block",
-			"From":       "00:00:00:25:B5:00:00:00",
+			"From":       "20:00:00:25:B5:00:00:00",
 			"Size":       1000, 
-			"To":         "00:00:00:25:B5:00:03:E7"
+			"To":         "20:00:00:25:B5:00:03:E7"
 		}
 	],
 	"PoolPurpose": "WWPN"
