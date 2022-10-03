@@ -3,7 +3,7 @@ module "wwpn_pool" {
   version = ">= 1.0.2"
 
   assignment_order = "sequential"
-  description      = "Demo WWPN Pool"
+  description      = "default WWPN Pool"
   id_blocks = [
     {
       from = "20:00:00:25:B5:00:00:00"

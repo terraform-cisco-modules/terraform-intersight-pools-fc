@@ -1,9 +1,14 @@
 <!-- BEGIN_TF_DOCS -->
+[![Tests](https://github.com/terraform-cisco-modules/terraform-intersight-pools-fc/actions/workflows/terratest.yml/badge.svg)](https://github.com/terraform-cisco-modules/terraform-intersight-pools-fc/actions/workflows/terratest.yml)
 # Terraform Intersight Pools - WWNN or WWPN
 Manages Intersight WWNN or WWPN Pools
 
 Location in GUI:
 `Pools` » `Create Pool` » `WWNN or WWPN`
+
+## Easy IMM
+
+[*Easy IMM - Comprehensive Example*](https://github.com/terraform-cisco-modules/easy-imm-comprehensive-example) - A comprehensive example for policies, pools, and profiles.
 
 ## Example
 
@@ -14,7 +19,7 @@ module "wwpn_pool" {
   version = ">= 1.0.2"
 
   assignment_order = "sequential"
-  description      = "Demo WWPN Pool"
+  description      = "default WWPN Pool"
   id_blocks = [
     {
       from = "20:00:00:25:B5:00:00:00"
