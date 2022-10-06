@@ -37,6 +37,6 @@ module "main" {
     }
   ]
   name         = var.name
-  organization = "default"
+  organization = "terratest"
   pool_purpose = "WWPN"
 }
